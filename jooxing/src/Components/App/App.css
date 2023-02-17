@@ -9,10 +9,11 @@ html {
 }
 
 h1 {
-  padding: .77rem 0;
+  width: 100%;
+  padding: 0.77rem 0;
   background-color: #010c3f;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.88rem;
   color: #fff;
 }
@@ -22,18 +23,21 @@ h1 .highlight {
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.55rem;
 }
 
 .App {
-  height: 100%;
+  display: flex-box;
+  justify-content: space-between;
+  align-items: space-around;
+  height: 150vh;
   padding: 0 17% 10% 17%;
-  background-image: url('./music_background.jpg');
+  background-image: url("./music_background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 500;
   color: #fff;
 }
@@ -43,10 +47,21 @@ h2 {
   justify-content: space-between;
   width: 100%;
 }
-
+.result {
+  width: 50%;
+  height: 100%;
+}
+.playlist {
+  width: 50%;
+  height: 100%;
+}
 @media only screen and (max-width: 1020px) {
   .App-playlist {
     align-items: center;
     flex-direction: column;
+  }
+
+  .App {
+    height: 200vh;
   }
 }
